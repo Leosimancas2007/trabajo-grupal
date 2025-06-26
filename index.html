@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - Componentes de una Computadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="main-title">Componentes de una Computadora</h1>
+
+  <div class="gallery-container">
+    <button class="nav-btn prev" onclick="prevSlide()">&#10094;</button>
+
+    <div class="gallery">
+      <div class="slide">
+        <div class="img-container">
+          <img src="https://i.ibb.co/s98YGhx8/20250626-0943-image.png" alt="Procesador (CPU)">
+        </div>
+        <div class="slide-caption">Procesador (CPU)</div>
+      </div>
+      <div class="slide">
+        <div class="img-container">
+          <img src="https://i.ibb.co/67Sy0QJp/fotor-ai-2025062695423.jpg" alt="Memoria RAM">
+        </div>
+        <div class="slide-caption">Memoria RAM</div>
+      </div>
+      <div class="slide">
+        <div class="img-container">
+          <img src="https://i.ibb.co/zVTMh2Bb/disco-duro.webp" alt="Disco Duro">
+        </div>
+        <div class="slide-caption">Disco Duro/SSD</div>
+      </div>
+      <div class="slide">
+        <div class="img-container">
+          <img src="https://i.ibb.co/Wp0yTjp1/20250626-0947-image.png" alt="Placa Madre">
+        </div>
+        <div class="slide-caption">Placa Madre</div>
+      </div>
+      <div class="slide">
+        <div class="img-container">
+          <img src="https://i.ibb.co/rGMJ1sH3/fotor-ai-2025062695535.jpg" alt="Tarjeta de Video">
+        </div>
+        <div class="slide-caption">Tarjeta de Video (GPU)</div>
+      </div>
+    </div>
+
+    <button class="nav-btn next" onclick="nextSlide()">&#10095;</button>
+
+    <div class="dots-container">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+      <span class="dot" onclick="goToSlide(3)"></span>
+      <span class="dot" onclick="goToSlide(4)"></span>
+    </div>
+  </div>
+
+  <div class="botones-navegacion">
+    <button onclick="prevSlide()">Volver</button>
+    <button onclick="nextSlide()">Seguir</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
